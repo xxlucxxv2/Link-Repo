@@ -1,0 +1,54 @@
+body {
+    background-color: #262626;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.center-aligned{
+    text-align: center;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    border: #ffffff;
+    padding: 20px;
+    margin: 20px auto;
+    text-align: center;
+    line-height: 8px;
+    display: grid;
+    place-content: center;
+}
+
+line-space {
+    line-height: 40px;
+}
+
+.corners {
+    border-radius: 25px;
+    background: #ffffff;
+    padding: 20px;
+    width: 250px;
+    height: 150px;
+  }
+
+
+@font-face {
+    font-family: 'bmwfont';
+    src: url('bmwfont-webfont.woff2') format('woff2'),
+         url('bmwfont-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: end;
+  }
