@@ -51,8 +51,31 @@
         </div>
         </div>
         <div style="display: flex;justify-content: center;">
-            <a href="https://github.com" class="widgets"><img src="simple-icons--github.svg" alt="GitHub"></a>
-            <a href="https://app.netlify.com" class="widgets"><img src="simple-icons--netlify.svg" alt="Netlify"></a>
+            <a target="_blank" href="https://github.com" class="widgets"><img src="simple-icons--github.svg" alt="GitHub"></a>
+            <a target="_blank" href="https://app.netlify.com" class="widgets"><img src="simple-icons--netlify.svg" alt="Netlify"></a>
         </div>
+        <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/11.3.0/firebase-app.js";
+            import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.3.0/firebase-analytics.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+          
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+              apiKey: "AIzaSyDvuYmaVx0v7DEEq7zLswdzI5yCD1h3taI",
+              authDomain: "link-repo-bfd7f.firebaseapp.com",
+              projectId: "link-repo-bfd7f",
+              storageBucket: "link-repo-bfd7f.firebasestorage.app",
+              messagingSenderId: "146343731925",
+              appId: "1:146343731925:web:7819fe28fac52d4017f85c",
+              measurementId: "G-F6Q9JP4SWG"
+            };
+          
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const analytics = getAnalytics(app);
+          </script>
     </body>
 </html>
