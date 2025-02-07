@@ -1,6 +1,6 @@
 body {
     background-image: url(green.png);
-    height: 5000px;
+    height: auto;
     background-size: 100%;
     background-repeat: no-repeat;
     background-color: rgba(0,26,45,255)
