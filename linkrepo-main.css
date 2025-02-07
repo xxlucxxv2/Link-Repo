@@ -1,17 +1,12 @@
 body {
     background-image: url(green.png);
-    height: auto;
+    height: 100%;
     background-size: 100%;
     background-repeat: no-repeat;
     background-color: rgba(0,26,45,255)
 
-
 }
 
-html {
-    height: 100%;
-    display: flex;
-}
 
 h3 {
     color: rgb(255, 255, 255);
