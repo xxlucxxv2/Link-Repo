@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <div id="nav-placeholder"></div>
+
+    <script>
+        $(function navbar() {
+            $("#nav-placeholder").load("nav.html");
+        });
+    </script>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <title>Start Site</title>
+        <link rel="stylesheet" href="linkrepo-main.css" />
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+        />
+        <style>
+            ::-webkit-scrollbar {
+                width: 10px;
+            }
+
+            ::-webkit-scrollbar-track {
+                background: rgba(255, 255, 255, 0);
+                border-radius: 10px;
+            }
+
+            ::-webkit-scrollbar-thumb {
+                background: rgba(40, 129, 126, 255);
+                border-radius: 10px;
+            }
+
+            ::-webkit-scrollbar-thumb:hover {
+                background: rgba(255, 255, 255, 0);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="nav-placeholder"></div>
+        <script>
+            $.get("nav.html", function (data) {
+                $("#nav-placeholder").replaceWith(data);
+            });
+        </script>
+        <h1
+            style="font-family: bmwfont; line-height: 200px; font-size: 70px"
+            class="bg-text"
+        >
+            Settings
+        </h1>
+    </body>
+</html>
