@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>My Link Repository</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link rel="stylesheet" href="linkrepo-main.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <style>
@@ -25,7 +26,12 @@
         </style>
     </head>
     <body>
-
+        <div id="nav-placeholder"></div>
+        <script>
+            $.get("nav.html", function(data){
+                $("#nav-placeholder").replaceWith(data);
+            });
+        </script> 
         <h1 style="font-family: bmwfont;line-height: 600px;font-size: 70px;" class="bg-text">My Links :)</h1>
         <div>
             <h3>My Other Sites:</h3>

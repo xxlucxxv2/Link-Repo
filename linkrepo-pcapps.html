@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>My Link Repository</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link rel="stylesheet" href="linkrepo-main.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <style>
@@ -25,14 +26,12 @@
         </style>
     </head>
     <body>
-        <div class="navbar">
-            <a href="index.html">Home</a>
-            <div class="dropdown">
-              <button class="dropbtn"><a href="linkrepo-main.html">Link-Repo</a></button>
-              <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+      <div id="nav-placeholder"></div>
+        <script>
+            $.get("nav.html", function(data){
+                $("#nav-placeholder").replaceWith(data);
+            });
+        </script> 
               </div>
             </div> 
           </div>

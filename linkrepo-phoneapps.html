@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>App Repository</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link rel="stylesheet" href="linkrepo-main.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <style>
@@ -24,7 +25,12 @@
             }
         </style>
     </head>
-
+    <div id="nav-placeholder"></div>
+        <script>
+            $.get("nav.html", function(data){
+                $("#nav-placeholder").replaceWith(data);
+            });
+        </script> 
     <h1 style="font-family: bmwfont;line-height: 600px;font-size: 70px;" class="bg-text">Phone Apps</h1>
     <a href="linkrepo-main.html">< Back to main Site</a>
     <h3>Underscored Links are .xapk Files. You need an XAPK Installer to install these Files!</h3>
