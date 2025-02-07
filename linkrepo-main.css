@@ -8,6 +8,11 @@ body {
 
 }
 
+html {
+    height: 100%;
+    display: flex;
+}
+
 h3 {
     color: rgb(255, 255, 255);
     font-size: 27px;
