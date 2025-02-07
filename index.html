@@ -1,8 +1,19 @@
 <!DOCTYPE html>
 <html>
+    <div id="nav-placeholder">
+
+    </div>
+
+    <script>
+    $(function navbar(){
+    $("#nav-placeholder").load("nav.html");
+    });
+    </script>
     <head>
-        <title>My Link Repository</title>
-        <link rel="stylesheet" href="linkrepo.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+        <title>Start Site</title>
+        <link rel="stylesheet" href="linkrepo-main.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <style>
             ::-webkit-scrollbar {
             width: 10px;
@@ -14,7 +25,7 @@
             }
             
             ::-webkit-scrollbar-thumb {
-            background: rgba(147, 0, 145, 0.648); 
+            background: rgba(40,129,126,255); 
             border-radius: 10px;
             }
 
@@ -24,69 +35,20 @@
         </style>
     </head>
     <body>
-        <h1 style="font-family: bmwfont;line-height: 750px;font-size: 70px;" class="bg-text">My Links :)</h1>
-        <div>
-            <h3>Green Links are Direct Download Links!</h3>
+        <div id="nav-placeholder"></div>
+        <script>
+            $.get("navigation.html", function(data){
+                $("#nav-placeholder").replaceWith(data);
+            });
+        </script> 
+        <h1 style="font-family: bmwfont;line-height: 200px;font-size: 70px;" class="bg-text">Start Page</h1>
+        <div class="wrapper">
+        <div class="box">
+            <form method="GET" action="https://www.google.com/search" target="_blank">
+                <input name="q" type="text" placeholder="Search With Google" >
+                <input type="submit">
+            </form>
         </div>
-        <div>
-            <h3>My Other Sites:</h3>
-            <a target="_blank" href="bmwm5cs.html">BMW M5 CS</a><br>
-            <a target="_blank" href="https://spotipi-xxlucxx6458.netlify.app">Nowify</a>
-        </div>
-        <div>
-            <h3>Phone Apps:</h3>
-            <a href="applist.html">Redirect Link</a>
-        </div>
-        <div>
-            <h3>General Links:</h3>
-            <a target="_blank" href="https://www.amazon.de/">Amazon</a><br>
-            <a target="_blank" href="https://www.google.com">Google</a>
-        </div>
-        <div>
-            <h3>Linux ISOs:</h3>
-            <a target="_blank" href="https://cdimage.debian.org/debian-cd/">Debian</a><br>
-            <a target="_blank" href="https://www.kali.org/get-kali/#kali-platforms">Kali Linux</a><br>
-            <a target="_blank" href="https://fedoraproject.org/workstation/download">Fedora</a><br>
-            <a target="_blank" href="https://www.archlinux.de/download">Arch Linux</a><br>
-            <a target="_blank" href="https://zorin.com/os/download/">Zorin OS</a><br>
-            <a target="_blank" href="https://ubuntu.com/download/desktop">Ubuntu</a>
-        </div>
-        <div>
-            <h3>Windows ISOs:</h3>
-            <a href="https://drive.google.com/drive/folders/1_C6GvidbDJGo3HiLNBpwYjeMUVbkyA47?usp=drive_link">Tiny10</a><br>
-            <a href="https://www.techspot.com/downloads/downloadnowfile/7578/?evp=629007e547d1c2d4877dda414505669c&file=11073" class="directlink">Tiny11</a><br>
-            <a href="https://download.ameliorated.io/AME%20Wizard%20Beta.zip" class="directlink">AtlasOS AME Wizard</a><br>
-            <a href="https://github.com/Atlas-OS/Atlas/releases/download/0.4.1/AtlasPlaybook_v0.4.1.apbx" class="directlink">AtlasOS Playbook</a>
-        </div>
-        <div>
-            <h3>Phone Utilities:</h3>
-            <a href="https://dl.google.com/android/repository/platform-tools-latest-windows.zip" class="directlink">ADB and Fastboot (Windows)</a><br>
-            <a href="https://dl.google.com/android/repository/platform-tools-latest-linux.zip" class="directlink">ADB and Fastboot (Linux)</a><br>
-            <a href="https://github.com/topjohnwu/Magisk/releases/download/v28.1/Magisk-v28.1.apk" class="directlink">Magisk</a><br>
-        </div>
-        <div>
-            <h3>PC Apps:</h3>
-            <a href="https://github.com/pbatard/rufus/releases/download/v4.6/rufus-4.6.exe" class="directlink">Rufus</a><br>
-            <a href="https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-user" class="directlink">VSCode</a><br>
-            <a href="https://redirector.gvt1.com/edgedl/android/studio/install/2024.2.2.13/android-studio-2024.2.2.13-windows.exe" class="directlink">Android Studio</a><br>
-            <a href="https://github.com/badabing2005/PixelFlasher/releases/download/v7.9.2.4/PixelFlasher.exe" class="directlink">PixelFlasher (Windows)</a><br>
-            <a href="https://github.com/badabing2005/PixelFlasher/releases/download/v7.9.2.4/PixelFlasher_Ubuntu_24_04" class="directlink">PixelFlasher (Ubuntu)</a>
-        </div>
-        <div>
-            <h3>Phone Modding:</h3>
-            <a target="_blank" href="https://www.projectblaze.in/download">Project Blaze</a><br>
-            <a target="_blank" href="https://wiki.lineageos.org/devices/">LineageOS</a><br>
-            <a target="_blank" href="https://rising-os-site.vercel.app/download">RisingOS</a><br>
-        </div>
-        <div>
-            <h3>Raspberry Pi:</h3>
-            <a target="_blank" href="https://www.raspberrypi.com/">Raspberry Pi Official Website</a><br>
-            <a href="https://downloads.raspberrypi.org/imager/imager_latest.exe" class="directlink">Raspberry Pi Imager</a><br>
-            <a href="https://downloads.raspberrypi.com/raspios_arm64/images/raspios_arm64-2024-11-19/2024-11-19-raspios-bookworm-arm64.img.xz" class="directlink">Raspberry Pi OS (64-bit)</a><br>
-            <a href="https://downloads.raspberrypi.com/raspios_lite_arm64/images/raspios_lite_arm64-2024-11-19/2024-11-19-raspios-bookworm-arm64-lite.img.xz" class="directlink">Raspberry Pi OS Lite (64-bit)</a><br>
-            <a target="_blank" href="https://konstakang.com/devices/">Android for Pi</a><br>
-            <a target="_blank" href="https://pi-apps.io/install/">Pi-Apps Install Guide</a>
-
         </div>
     </body>
 </html>
