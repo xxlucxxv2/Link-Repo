@@ -4,7 +4,7 @@
 
     <script>
         $(function navbar() {
-            $("#nav-placeholder").load("nav.html");
+            $("#nav-placeholder").load("/misc/nav.html");
         });
     </script>
     <head>
@@ -39,7 +39,7 @@
     <body>
         <div id="nav-placeholder"></div>
         <script>
-            $.get("nav.html", function (data) {
+            $.get("/misc/nav.html", function (data) {
                 $("#nav-placeholder").replaceWith(data);
             });
         </script>
