@@ -3,44 +3,70 @@
     <head>
         <title>My Link Repository</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="linkrepo-main.css">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="../linkrepo-main.css" />
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+        />
         <style>
             ::-webkit-scrollbar {
-            width: 10px;
+                width: 10px;
             }
 
             ::-webkit-scrollbar-track {
-            background: rgba(255, 255, 255, 0);
-            border-radius: 10px;
+                background: rgba(255, 255, 255, 0);
+                border-radius: 10px;
             }
-            
+
             ::-webkit-scrollbar-thumb {
-            background: rgba(40,129,126,255); 
-            border-radius: 10px;
+                background: rgba(40, 129, 126, 255);
+                border-radius: 10px;
             }
 
             ::-webkit-scrollbar-thumb:hover {
-            background: rgba(255, 255, 255, 0); 
+                background: rgba(255, 255, 255, 0);
             }
         </style>
     </head>
     <body>
         <div id="nav-placeholder"></div>
         <script>
-            $.get("nav.html", function(data){
+            $.get("nav.html", function (data) {
                 $("#nav-placeholder").replaceWith(data);
             });
-        </script> 
-        <h1 style="font-family: bmwfont;line-height: 600px;font-size: 70px;" class="bg-text">Raspberry Pi</h1>
+        </script>
+        <h1
+            style="font-family: bmwfont; line-height: 600px; font-size: 70px"
+            class="bg-text"
+        >
+            Raspberry Pi
+        </h1>
         <div>
             <h3>Raspberry Pi:</h3>
-            <a target="_blank" href="https://www.raspberrypi.com/">Raspberry Pi Official Website</a><br>
-            <a href="https://downloads.raspberrypi.org/imager/imager_latest.exe" class="directlink">Raspberry Pi Imager</a><br>
-            <a href="https://downloads.raspberrypi.com/raspios_arm64/images/raspios_arm64-2024-11-19/2024-11-19-raspios-bookworm-arm64.img.xz" class="directlink">Raspberry Pi OS (64-bit)</a><br>
-            <a href="https://downloads.raspberrypi.com/raspios_lite_arm64/images/raspios_lite_arm64-2024-11-19/2024-11-19-raspios-bookworm-arm64-lite.img.xz" class="directlink">Raspberry Pi OS Lite (64-bit)</a><br>
-            <a target="_blank" href="https://konstakang.com/devices/">Android for Pi</a><br>
-            <a target="_blank" href="https://pi-apps.io/install/">Pi-Apps Install Guide</a>
+            <a target="_blank" href="https://www.raspberrypi.com/"
+                >Raspberry Pi Official Website</a
+            ><br />
+            <a
+                href="https://downloads.raspberrypi.org/imager/imager_latest.exe"
+                class="directlink"
+                >Raspberry Pi Imager</a
+            ><br />
+            <a
+                href="https://downloads.raspberrypi.com/raspios_arm64/images/raspios_arm64-2024-11-19/2024-11-19-raspios-bookworm-arm64.img.xz"
+                class="directlink"
+                >Raspberry Pi OS (64-bit)</a
+            ><br />
+            <a
+                href="https://downloads.raspberrypi.com/raspios_lite_arm64/images/raspios_lite_arm64-2024-11-19/2024-11-19-raspios-bookworm-arm64-lite.img.xz"
+                class="directlink"
+                >Raspberry Pi OS Lite (64-bit)</a
+            ><br />
+            <a target="_blank" href="https://konstakang.com/devices/"
+                >Android for Pi</a
+            ><br />
+            <a target="_blank" href="https://pi-apps.io/install/"
+                >Pi-Apps Install Guide</a
+            >
         </div>
     </body>
 </html>

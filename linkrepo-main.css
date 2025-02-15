@@ -1,5 +1,5 @@
 body {
-    background-image: url(green.png);
+    background-image: url(images/green.png);
     height: fit-content;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -54,8 +54,8 @@ a:hover {
 
 @font-face {
     font-family: "bmwfont";
-    src: url("bmwfont-webfont.woff2") format("woff2"),
-        url("bmwfont-webfont.woff") format("woff");
+    src: url("misc/bmwfont-webfont.woff2") format("woff2"),
+        url("misc/bmwfont-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
