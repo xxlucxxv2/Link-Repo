@@ -101,35 +101,6 @@ input[type="submit"] {
     color: #fff;
 }
 
-.material-icons {
-    font-family: "Material Icons";
-    font-weight: normal;
-    font-style: normal;
-    font-size: 24px; /* Preferred icon size */
-    display: inline-block;
-    line-height: 1;
-    text-transform: none;
-    letter-spacing: normal;
-    word-wrap: normal;
-    white-space: nowrap;
-    direction: ltr;
-
-    /* Support for all WebKit browsers. */
-    -webkit-font-smoothing: antialiased;
-    /* Support for Safari and Chrome. */
-    text-rendering: optimizeLegibility;
-
-    /* Support for Firefox. */
-    -moz-osx-font-smoothing: grayscale;
-
-    /* Support for IE. */
-    font-feature-settings: "liga";
-}
-
-.material-icons.white {
-    color: #ffffff;
-}
-
 .btn {
     background-color: transparent;
     background-repeat: no-repeat;
@@ -147,7 +118,7 @@ input[type="submit"] {
 .navbar {
     overflow: hidden;
     border-radius: 20px;
-    width: 100%;
+    width: auto;
     top: 10px;
     background-color: rgba(9, 116, 126, 0.447);
 }
