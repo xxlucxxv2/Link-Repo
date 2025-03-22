@@ -69,14 +69,16 @@ a:hover {
 }
 
 input[type="text"] {
-    padding: 8px;
     border: 2px solid #ccc;
     outline: none;
     font-size: 18px;
     color: #333;
     font-family: bmwfont;
     border-radius: 25px;
-    padding: 20px;
+    padding: 12px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 8px 0;
 }
 
 input[type="text"]:focus {
@@ -129,7 +131,8 @@ input[type="submit"] {
     font-size: 18px;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
+    text-decoration:                        
+    style="width: 80%" none;
     margin-bottom: -4px;
     color: rgb(255, 255, 255);
 }
@@ -175,10 +178,7 @@ input[type="submit"] {
 
 .dropdown-content a:hover {
     background-color: rgba(40, 129, 126, 255);
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
+    width: 80% block;
 }
 
 .widgets {
@@ -187,7 +187,7 @@ input[type="submit"] {
     background-color: transparent;
     border: 5px solid;
     color: white;
-    padding: 32px;
+    padding: 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -196,6 +196,7 @@ input[type="submit"] {
     border-radius: 20px;
     transition-duration: 0.4s;
     margin: 7px;
+    margin-top: 50px;
 }
 
 .widgets:hover {
@@ -212,4 +213,22 @@ input[type="submit"] {
     cursor: pointer;
     border-radius: 20px;
     background-color: rgba(16, 66, 88, 255);
+}
+
+.search-container {
+    width: 100%;
+}
+
+.search-box {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    outline: none;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.search-box:focus {
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
 }

@@ -47,23 +47,10 @@
         >
             Start Page
         </h1>
-        <div class="wrapper">
-            <div class="box">
-                <form
-                    method="GET"
-                    action="https://www.google.com/search"
-                    target="_blank"
-                >
-                    <input
-                        name="q"
-                        type="text"
-                        placeholder="Search With Google"
-                        style="width: 1000px"
-                        onfocus="this.value=''"
-                    />
-                    <input type="submit" />
-                </form>
-            </div>
+        <div class="search-container">
+            <form action="https://www.google.com/search" target="_blank">
+                <input type="text" name="q" class="search-box" placeholder="Search with Google" onfocus="this.value=''">
+            </form>
         </div>
         <div style="display: flex; justify-content: center">
             <a href="https://github.com" target="_blank" class="widgets"
