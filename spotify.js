@@ -6,6 +6,9 @@ const loginBtn = document.getElementById("login-btn");
 const controls = document.getElementById("controls");
 const playBtn = document.getElementById("play-btn");
 const pauseBtn = document.getElementById("pause-btn");
+const progressBar = document.getElementById("progress-bar");
+const currentTime = document.getElementById("current-time");
+const duration = document.getElementById("duration");
 
 function getTokenFromUrl() {
   const hash = window.location.hash.substring(1);
@@ -49,3 +52,38 @@ pauseBtn.onclick = () => {
     },
   });
 };
+
+function updateProgress() {
+  fetch("https://api.spotify.com/v1/me/player", {
+    method: "GET",
+    headers: {
+      Authorization: "Bearer " + localStorage.getItem("spotifyAccessToken"),
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      if (data && data.is_playing) {
+        const progress = data.progress_ms;
+        const duration_ms = data.item.duration_ms;
+        const progressPercentage = (progress / duration_ms) * 100;
+
+        progressBar.value = progressPercentage;
+
+        // Format time
+        const currentMinutes = Math.floor(progress / 60000);
+        const currentSeconds = Math.floor((progress % 60000) / 1000);
+        currentTime.textContent = `${currentMinutes}:${
+          currentSeconds < 10 ? "0" : ""
+        }${currentSeconds}`;
+
+        const totalMinutes = Math.floor(duration_ms / 60000);
+        const totalSeconds = Math.floor((duration_ms % 60000) / 1000);
+        duration.textContent = `${totalMinutes}:${
+          totalSeconds < 10 ? "0" : ""
+        }${totalSeconds}`;
+      }
+    });
+}
+
+// Update progress every second
+setInterval(updateProgress, 1000);
