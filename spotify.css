@@ -65,6 +65,7 @@ button:hover {
   border-radius: 10px;
   cursor: not-allowed; /* disables dragging */
   pointer-events: none; /* disables interaction */
+  color: aliceblue;
 }
 
 #current-time,
