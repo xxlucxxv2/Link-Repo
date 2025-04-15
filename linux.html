@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linux Resources</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Linux Related Stuff</h1>
+
+    <nav class="top-nav">
+      <a href="index.html" class="back-link">← Back to Home</a>
+    </nav>
+
+    <ul class="link-list">
+      <li>
+        <a href="https://kernel.org" target="_blank"
+          >The Linux Kernel Archive</a
+        >
+        <p>The official source for the Linux kernel and related projects.</p>
+      </li>
+      <li>
+        <a href="https://www.linux.org/" target="_blank">Linux.org</a>
+        <p>Linux tutorials, forums, and general resources for all users.</p>
+      </li>
+      <li>
+        <a href="https://wiki.archlinux.org/" target="_blank">Arch Wiki</a>
+        <p>
+          Highly detailed documentation for Arch Linux, useful for all distros.
+        </p>
+      </li>
+      <li>
+        <a href="https://distrowatch.com/" target="_blank">DistroWatch</a>
+        <p>
+          Tracks and lists distributions with summaries, news, and popularity
+          rankings.
+        </p>
+      </li>
+    </ul>
+
+    <h2>Popular Linux Distros</h2>
+    <div class="collapsible">
+      <button class="collapsible-btn">Popular Linux Distributions</button>
+      <div class="collapsible-content">
+        <ul class="link-list">
+          <li>
+            <a href="https://ubuntu.com/" target="_blank">Ubuntu</a>
+            <p>One of the most popular Linux distros, beginner-friendly.</p>
+          </li>
+          <li>
+            <a href="https://www.debian.org/" target="_blank">Debian</a>
+            <p>A stable and versatile distro, known for its solid base.</p>
+          </li>
+          <li>
+            <a href="https://www.archlinux.org/" target="_blank">Arch Linux</a>
+            <p>
+              A lightweight and flexible distro, popular among advanced users.
+            </p>
+          </li>
+          <li>
+            <a href="https://www.centos.org/" target="_blank">CentOS</a>
+            <p>
+              A community-supported, free version of Red Hat Enterprise Linux.
+            </p>
+          </li>
+          <li>
+            <a href="https://www.fedoraproject.org/" target="_blank">Fedora</a>
+            <p>Red Hat's cutting-edge community distribution.</p>
+          </li>
+          <li>
+            <a href="https://www.manjaro.org/" target="_blank">Manjaro</a>
+            <p>A user-friendly, Arch-based distro.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      const collapsibleBtns = document.querySelectorAll(".collapsible-btn");
+      collapsibleBtns.forEach((button) => {
+        button.addEventListener("click", function () {
+          const content = this.nextElementSibling;
+
+          // Toggle the 'open' class to trigger the height transition
+          if (content.classList.contains("open")) {
+            content.classList.remove("open");
+          } else {
+            content.classList.add("open");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

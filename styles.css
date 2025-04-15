@@ -95,3 +95,143 @@ h1 {
 .search-bar button:hover {
   background-color: #74c7ec;
 }
+
+.link-list {
+  list-style: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.link-list li {
+  background-color: var(--surface0);
+  border-radius: 0.75rem;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.link-list li a {
+  color: var(--accent);
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.link-list li a:hover {
+  color: #cdd6f4;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.link-list li p {
+  color: var(--subtext);
+  font-size: 0.95rem;
+  margin-top: 0.25rem;
+}
+
+.top-nav {
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.back-link {
+  background-color: var(--surface1);
+  color: var(--accent);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.collapsible-btn {
+  background-color: var(--surface1);
+  color: var(--accent);
+  padding: 1rem;
+  width: 100%;
+  border: none;
+  text-align: left;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  transition: background-color 0.3s;
+}
+
+.collapsible-btn:hover {
+  color: #cdd6f4;
+}
+
+.collapsible-content {
+  padding: 0 1rem;
+  max-height: 0;
+  overflow: hidden;
+  background-color: var(--surface0);
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  transition: max-height 0.3s ease, padding 0.3s ease; /* Add padding transition */
+}
+
+.collapsible-content.open {
+  max-height: 1000px; /* Set a high value to accommodate content height */
+  padding: 1rem; /* Consistent padding when open */
+}
+
+.collapsible-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; /* Remove default margins */
+}
+
+.collapsible-content li {
+  background-color: var(--surface1);
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.collapsible-content li a {
+  color: var(--accent);
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+.collapsible-content li p {
+  color: var(--subtext);
+  font-size: 0.95rem;
+  margin-top: 0.25rem;
+}
+
+.collapsible-content li a {
+  color: var(--accent); /* Default link color */
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.collapsible-content li a:hover {
+  color: #cdd6f4; /* Hover color */
+}
+
+/* Global link styles */
+a {
+  color: var(--accent); /* Default link color */
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Hover effect for all links */
+a:hover {
+  color: #cdd6f4; /* Hover color */
+}
+
+/* Specifically for links within the collapsible content */
+.collapsible-content a {
+  color: var(--accent); /* Default color for links in collapsible content */
+}
+
+.collapsible-content a:hover {
+  color: #cdd6f4; /* Hover color for links in collapsible content */
+}

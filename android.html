@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Android Resources</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Android Related Stuff</h1>
+
+    <nav class="top-nav">
+      <a href="index.html" class="back-link">← Back to Home</a>
+    </nav>
+
+    <ul class="link-list">
+      <li>
+        <a href="https://source.android.com/">AOSP</a>
+        <p>Android Open Source Project</p>
+      </li>
+    </ul>
+    <script>
+      const collapsibleBtns = document.querySelectorAll(".collapsible-btn");
+      collapsibleBtns.forEach((button) => {
+        button.addEventListener("click", function () {
+          const content = this.nextElementSibling;
+
+          // Toggle the 'open' class to trigger the height transition
+          if (content.classList.contains("open")) {
+            content.classList.remove("open");
+          } else {
+            content.classList.add("open");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
