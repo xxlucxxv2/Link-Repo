@@ -61,41 +61,36 @@ button:hover {
 
 #progress-bar {
   width: 80%;
-  background-color: #6c7086; /* bar color */
-  border-radius: 10px;
   height: 8px;
+  background-color: transparent;
   border: none;
+  pointer-events: none;
   appearance: none;
 }
 
+/* WebKit browsers (Chrome, Safari) */
 #progress-bar::-webkit-slider-runnable-track {
-  background-color: #6c7086; /* track color */
-  border-radius: 10px;
   height: 8px;
+  background-color: #6c7086; /* Mocha-style muted purple */
+  border-radius: 10px;
 }
 
 #progress-bar::-webkit-slider-thumb {
-  background-color: transparent; /* Remove the thumb */
-  border: none;
-  height: 0;
+  appearance: none;
   width: 0;
+  height: 0;
 }
 
+/* Firefox */
 #progress-bar::-moz-range-track {
-  background-color: #6c7086; /* track color */
-  border-radius: 10px;
   height: 8px;
+  background-color: #6c7086;
+  border-radius: 10px;
 }
 
 #progress-bar::-moz-range-thumb {
-  background-color: transparent; /* Remove the thumb */
-  border: none;
-  height: 0;
   width: 0;
-}
-
-#current-time,
-#duration {
-  color: #b4befe; /* lavender */
-  margin-left: 10px;
+  height: 0;
+  border: none;
+  background: transparent;
 }
