@@ -61,36 +61,14 @@ button:hover {
 
 #progress-bar {
   width: 80%;
-  height: 8px;
-  background-color: #003cff;
-  border: none;
-  pointer-events: none;
-  appearance: none;
-}
-
-/* WebKit browsers (Chrome, Safari) */
-#progress-bar::-webkit-slider-runnable-track {
-  height: 8px;
-  background-color: #cdd6f4; /* Mocha-style muted purple */
+  background-color: #6c7086;
   border-radius: 10px;
+  cursor: not-allowed; /* disables dragging */
+  pointer-events: none; /* disables interaction */
 }
 
-#progress-bar::-webkit-slider-thumb {
-  appearance: none;
-  width: 0;
-  height: 0;
-}
-
-/* Firefox */
-#progress-bar::-moz-range-track {
-  height: 8px;
-  background-color: #cdd6f4;
-  border-radius: 10px;
-}
-
-#progress-bar::-moz-range-thumb {
-  width: 0;
-  height: 0;
-  border: none;
-  background: transparent;
+#current-time,
+#duration {
+  color: #b4befe; /* lavender */
+  margin-left: 10px;
 }
