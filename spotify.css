@@ -62,7 +62,7 @@ button:hover {
 #progress-bar {
   width: 80%;
   height: 8px;
-  background-color: transparent;
+  background-color: #cdd6f4;
   border: none;
   pointer-events: none;
   appearance: none;
@@ -71,7 +71,7 @@ button:hover {
 /* WebKit browsers (Chrome, Safari) */
 #progress-bar::-webkit-slider-runnable-track {
   height: 8px;
-  background-color: #6c7086; /* Mocha-style muted purple */
+  background-color: #cdd6f4; /* Mocha-style muted purple */
   border-radius: 10px;
 }
 
@@ -84,7 +84,7 @@ button:hover {
 /* Firefox */
 #progress-bar::-moz-range-track {
   height: 8px;
-  background-color: #6c7086;
+  background-color: #cdd6f4;
   border-radius: 10px;
 }
 
