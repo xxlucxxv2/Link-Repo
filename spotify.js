@@ -1,5 +1,5 @@
 const clientId = "38cc5bcece9f4b4dbcf967b07facc0a4";
-const redirectUri = "https://linkrepo.netlify.app/";
+const redirectUri = "https://linkrepo.netlify.app/controls/";
 const scopes = "user-read-playback-state user-modify-playback-state";
 
 const loginBtn = document.getElementById("login-btn");
