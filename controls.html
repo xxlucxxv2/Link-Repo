@@ -1,38 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Spotify Control</title>
-  <script defer src="spotify.js"></script>
-  <style>
-    body {
-      background-color: #1e1e2e;
-      color: #cdd6f4;
-      font-family: sans-serif;
-      text-align: center;
-      padding: 2rem;
-    }
-    button {
-      background-color: #313244;
-      color: #cdd6f4;
-      border: none;
-      padding: 0.5rem 1rem;
-      margin: 0.5rem;
-      font-size: 1rem;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #45475a;
-    }
-  </style>
-</head>
-<body>
-  <h1>Spotify Control</h1>
-  <button id="login-btn">Login with Spotify</button>
-  <div id="controls" style="display:none;">
-    <button id="play-btn">Play</button>
-    <button id="pause-btn">Pause</button>
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Spotify Control</title>
+    <link rel="stylesheet" href="spotify.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Spotify Control</h1>
+      <button id="login-btn">Login with Spotify</button>
+      <div id="controls" style="display: none">
+        <button id="play-btn">Play</button>
+        <button id="pause-btn">Pause</button>
+      </div>
+    </main>
+
+    <script src="spotify.js"></script>
+  </body>
 </html>

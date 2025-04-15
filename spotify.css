@@ -1,0 +1,45 @@
+/* Catppuccin Mocha */
+body {
+  background-color: #1e1e2e; /* base */
+  color: #cdd6f4; /* text */
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #313244; /* surface */
+  padding: 2rem 3rem;
+  border-radius: 16px;
+  box-shadow: 0 0 20px #181825; /* mantle */
+  text-align: center;
+}
+
+h1 {
+  color: #b4befe; /* lavender */
+  margin-bottom: 1.5rem;
+}
+
+button {
+  background-color: #45475a; /* overlay0 */
+  color: #cdd6f4; /* text */
+  border: none;
+  padding: 0.75rem 1.5rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #585b70;
+}
+
+#controls {
+  margin-top: 2rem;
+}
