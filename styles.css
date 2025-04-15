@@ -62,3 +62,36 @@ h1 {
   margin-top: 0.5rem;
   font-size: 0.95rem;
 }
+
+.search-bar {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.search-bar input[type="text"] {
+  background-color: var(--surface0);
+  color: var(--text);
+  border: 2px solid var(--surface1);
+  border-radius: 0.5rem;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  width: 300px;
+}
+
+.search-bar button {
+  background-color: var(--accent);
+  color: var(--base);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.search-bar button:hover {
+  background-color: #74c7ec;
+}
