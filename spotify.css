@@ -61,10 +61,37 @@ button:hover {
 
 #progress-bar {
   width: 80%;
-  background-color: #6c7086;
+  background-color: #6c7086; /* bar color */
   border-radius: 10px;
-  cursor: not-allowed; /* disables dragging */
-  pointer-events: none; /* disables interaction */
+  height: 8px;
+  border: none;
+  appearance: none;
+}
+
+#progress-bar::-webkit-slider-runnable-track {
+  background-color: #6c7086; /* track color */
+  border-radius: 10px;
+  height: 8px;
+}
+
+#progress-bar::-webkit-slider-thumb {
+  background-color: transparent; /* Remove the thumb */
+  border: none;
+  height: 0;
+  width: 0;
+}
+
+#progress-bar::-moz-range-track {
+  background-color: #6c7086; /* track color */
+  border-radius: 10px;
+  height: 8px;
+}
+
+#progress-bar::-moz-range-thumb {
+  background-color: transparent; /* Remove the thumb */
+  border: none;
+  height: 0;
+  width: 0;
 }
 
 #current-time,
