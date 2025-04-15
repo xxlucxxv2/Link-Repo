@@ -62,7 +62,7 @@ button:hover {
 #progress-bar {
   width: 80%;
   height: 8px;
-  background-color: #cdd6f4;
+  background-color: #003cff;
   border: none;
   pointer-events: none;
   appearance: none;
