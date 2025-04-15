@@ -73,3 +73,10 @@ button:hover {
   color: #b4befe; /* lavender */
   margin-left: 10px;
 }
+
+#progress-bar::-webkit-slider-thumb {
+  background-color: transparent; /* Remove the thumb */
+  border: none;
+  height: 0;
+  width: 0;
+}
