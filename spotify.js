@@ -87,3 +87,44 @@ function updateProgress() {
 
 // Update progress every second
 setInterval(updateProgress, 1000);
+
+function updateTrackInfo(data) {
+  const track = data.item;
+  const trackInfo = document.getElementById("track-info");
+  const albumArt = document.getElementById("album-art");
+
+  if (
+    !track ||
+    !track.album ||
+    !track.album.images ||
+    !track.album.images.length
+  )
+    return;
+
+  trackInfo.textContent = `${track.name} — ${track.artists
+    .map((a) => a.name)
+    .join(", ")}`;
+  albumArt.src = track.album.images[0].url;
+  albumArt.classList.remove("hidden");
+
+  // Update progress bar
+  updateProgressBar(data.progress_ms, track.duration_ms);
+}
+
+function fetchAndUpdateTrack() {
+  fetch("/spotify/current") // Make sure this endpoint returns current playback
+    .then((res) => res.json())
+    .then((data) => {
+      updateTrackInfo(data);
+      document.getElementById("controls").classList.remove("hidden");
+    })
+    .catch((err) => {
+      console.error("Error fetching track info:", err);
+    });
+}
+
+// Fetch once immediately
+fetchAndUpdateTrack();
+
+// Repeat every 5 seconds
+setInterval(fetchAndUpdateTrack, 5000);

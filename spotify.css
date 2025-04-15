@@ -96,3 +96,13 @@ button:hover {
   background: transparent;
   border: none;
 }
+
+.album-art {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  margin: 1rem auto;
+  display: block;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
